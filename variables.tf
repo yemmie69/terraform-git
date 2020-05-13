@@ -1,3 +1,4 @@
+
 variable "region" {
   default = "eu-west-1"
 
@@ -7,8 +8,12 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "ami" {
-  default = "ami-0fef9a48ebf98bbe0"
+variable "amis" {
+  type = "map"
+  default = {
+    eu-west-1 = "ami-096d3cd7ce28a6d6c"
+   // eu-west-1 = "ami-05d0bd3a19163a540"
+  }
 
 }
 

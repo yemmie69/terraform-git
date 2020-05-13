@@ -1,13 +1,13 @@
 resource "aws_instance" "project" {
-  ami           = var.ami
+  ami           = var.amis[var.region]
   count         = var.aws-count
   instance_type = var.instance_type
-//key_name = "${aws_key_pair.demo.key_name}"
-key_name = "terraform"
+  //key_name = "${aws_key_pair.demo.key_name}"
+  key_name = "terraform"
 
+ 
 
-
-  tags = {
+ tags = {
     Name = "Jenkins ${count.index + 1}"
 
 

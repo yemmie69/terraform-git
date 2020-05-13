@@ -18,7 +18,7 @@ resource "aws_security_group" "pro-sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
- cidr_blocks = ["151.230.111.174/31"]
+    cidr_blocks = ["151.230.111.174/31"]
   }
 
   egress {
