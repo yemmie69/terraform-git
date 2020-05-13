@@ -8,7 +8,7 @@ resource "aws_instance" "project" {
  
 
  tags = {
-    Name = "Jenkins ${count.index + 1}"
+    Name = "Jenkins ${count.index + 2}"
 
 
   }
