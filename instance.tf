@@ -1,5 +1,5 @@
 resource "aws_instance" "project" {
-  ami           = var.amis[var.region]
+  ami           = var.ami
   count         = var.aws-count
   instance_type = var.instance_type
   //key_name = "${aws_key_pair.demo.key_name}"

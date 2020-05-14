@@ -8,7 +8,7 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "amis" {
+variable "ami" {
  // type = "map"
   default = "ami-096d3cd7ce28a6d6c"
    // eu-west-1 = 
@@ -18,7 +18,7 @@ variable "amis" {
 }
 
 variable "aws-count" {
-  default = 1
+  default = 3
 
 }
 
