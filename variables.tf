@@ -9,11 +9,11 @@ variable "instance_type" {
 }
 
 variable "amis" {
-  type = "map"
-  default = {
-    eu-west-1 = "ami-096d3cd7ce28a6d6c"
+ // type = "map"
+  default = "ami-096d3cd7ce28a6d6c"
+   // eu-west-1 = 
    // eu-west-1 = "ami-05d0bd3a19163a540"
-  }
+  
 
 }
 
