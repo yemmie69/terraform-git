@@ -9,7 +9,7 @@ resource "aws_instance" "project" {
  
 
  tags = {
-    Name = "blue-box ${count.index + 1}"
+    Name = "blue-box ${count.index + 2}"
 //Name= "jenkins ${count.index + 1}"
 
   }

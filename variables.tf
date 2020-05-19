@@ -23,7 +23,7 @@ variable "region_ami" {
 }
 
 variable "aws-count" {
-  default = 1
+  default = 2
 
 }
 
