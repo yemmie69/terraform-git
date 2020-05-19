@@ -8,17 +8,22 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "ami" {
- // type = "map"
-  default = "ami-05e0dbbeeae0dd7aa"
-   // eu-west-1 = 
-   // eu-west-1 = "ami-05d0bd3a19163a540"
-  
+//variable "ami" {
+ 
+//}
 
+variable "region_ami" {
+ type = "map"
+  default = {
+   eu-west-1 = "ami-096d3cd7ce28a6d6c" 
+   eu-west-1 = "ami-0fe87dbdf262b0943"
+  // eu-west-1 = "ami-05d0bd3a19163a540"
+  
+  }
 }
 
 variable "aws-count" {
-  default = 3
+  default = 1
 
 }
 
