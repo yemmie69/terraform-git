@@ -15,7 +15,7 @@ variable "instance_type" {
 variable "region_ami" {
  type = "map"
   default = {
-  // eu-west-1 = "ami-0fe87dbdf262b0943"
+   eu-west-1 = "ami-0fe87dbdf262b0943"
   // eu-west-1 = "ami-05d0bd3a19163a540"
   
   }
