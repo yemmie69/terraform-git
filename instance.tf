@@ -1,4 +1,4 @@
-resource "aws_instance" "project" {
+resource "aws_instance" "jenkins" {
  // ami           = "${var.ami}"
   ami             = "${var.region_ami["${var.region}"]}"
   count         = "${var.aws-count}"
@@ -9,8 +9,8 @@ resource "aws_instance" "project" {
  
 
  tags = {
-    Name = "blue-box ${count.index + 1}"
-//Name= "jenkins ${count.index + 1}"
+//    Name = "blue-box ${count.index + 1}"
+Name= "jenkins ${count.index + 1}"
 
   }
 }

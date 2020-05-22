@@ -1,17 +1,17 @@
-resource "aws_vpc" "project-vpc" {
+resource "aws_vpc" "jenkins-vpc" {
   cidr_block = var.vpc-cidr_block
 
   tags = {
-    Name = "pro-vpc"
+    Name = "jenkins-vpc"
   }
 }
 
-resource "aws_subnet" "project-subnet" {
+resource "aws_subnet" "jenkins-subnet" {
 
-  vpc_id     = aws_vpc.project-vpc.id
+  vpc_id     = aws_vpc.jenkins-vpc.id
   cidr_block = var.subnet-cidr_block
 
   tags = {
-    Name = "project-subnet"
+    Name = "jenkins-subnet"
   }
 }

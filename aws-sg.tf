@@ -3,7 +3,7 @@
 resource "aws_security_group" "pro-sg" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_vpc.project-vpc.id
+  vpc_id      = aws_vpc.jenkins-vpc.id
 
   ingress {
     description = "TLS from VPC"
