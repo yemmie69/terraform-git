@@ -10,7 +10,7 @@ pipeline {
          steps {
             echo 'initializing terraform'
             sh '''
-         terraform init
+        ssh -tt ec2-user@3.249.190.106
             '''
          }
       }
@@ -24,7 +24,8 @@ pipeline {
          steps {
             echo 'terraform apply'
             sh '''
-            terraform apply -auto-approve
+           
+
             '''
          }
       }
