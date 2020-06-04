@@ -10,7 +10,6 @@ pipeline {
          steps {
             echo 'initializing terraform'
             sh '''
-        ssh terraform.pem ec2-user@3.249.190.106
             '''
          }
       }
